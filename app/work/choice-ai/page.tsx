@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import LanguageSwitcher from "../../components/language-switcher";
 
 export const metadata: Metadata = {
@@ -10,7 +11,7 @@ export default function ChoiceAIPage() {
   return (
     <main className="case-page">
       <nav className="case-nav" aria-label="案例页导航">
-        <a href="/">← 返回首页</a>
+        <Link href="/">← 返回首页</Link>
         <strong>DAVID · CASE 01</strong>
         <div className="case-nav-actions"><LanguageSwitcher current="zh" zhHref="/work/choice-ai" enHref="/en/work/choice-ai" /><a href="mailto:18602172142@163.com">联系我 ↗</a></div>
       </nav>
@@ -49,7 +50,7 @@ export default function ChoiceAIPage() {
 
       <footer className="case-outro">
         <h2>下一个案例：AI 视频模型评测</h2>
-        <div className="case-outro-actions"><a className="button button-secondary" href="/">返回首页</a><a className="button button-primary" href="/work/ai-video-evaluation">继续查看 →</a></div>
+        <div className="case-outro-actions"><Link className="button button-secondary" href="/">返回首页</Link><Link className="button button-primary" href="/work/ai-video-evaluation">继续查看 →</Link></div>
       </footer>
     </main>
   );

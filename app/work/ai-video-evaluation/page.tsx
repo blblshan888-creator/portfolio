@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import LanguageSwitcher from "../../components/language-switcher";
 
 export const metadata: Metadata = {
@@ -10,7 +11,7 @@ export default function AIVideoEvaluationPage() {
   return (
     <main className="case-page">
       <nav className="case-nav" aria-label="案例页导航">
-        <a href="/">← 返回首页</a>
+        <Link href="/">← 返回首页</Link>
         <strong>DAVID · CASE 02</strong>
         <div className="case-nav-actions"><LanguageSwitcher current="zh" zhHref="/work/ai-video-evaluation" enHref="/en/work/ai-video-evaluation" /><a href="https://my.feishu.cn/wiki/WoAmwxwXpiXvmIk74rwceYNVncg?from=from_copylink" target="_blank" rel="noreferrer">完整飞书评测 ↗</a></div>
       </nav>
@@ -30,7 +31,8 @@ export default function AIVideoEvaluationPage() {
               poster="/images/work/dragon-conquest-poster.jpg"
               aria-label="播放 AI 视频作品《龙之征服》"
             >
-              <source src="/videos/dragon-conquest.mp4" type="video/mp4" />
+              <source src="/videos/dragon-conquest-web.m4v" type="video/x-m4v" />
+              <track kind="captions" src="/videos/dragon-conquest-captions.vtt" srcLang="zh" label="中文说明" default />
               当前浏览器不支持视频播放。
             </video>
           </div>
@@ -76,7 +78,7 @@ export default function AIVideoEvaluationPage() {
 
       <footer className="case-outro">
         <h2>查看评测原文，或返回作品集。</h2>
-        <div className="case-outro-actions"><a className="button button-secondary" href="/">返回首页</a><a className="button button-primary" href="https://my.feishu.cn/wiki/WoAmwxwXpiXvmIk74rwceYNVncg?from=from_copylink" target="_blank" rel="noreferrer">完整飞书评测 ↗</a></div>
+        <div className="case-outro-actions"><Link className="button button-secondary" href="/">返回首页</Link><a className="button button-primary" href="https://my.feishu.cn/wiki/WoAmwxwXpiXvmIk74rwceYNVncg?from=from_copylink" target="_blank" rel="noreferrer">完整飞书评测 ↗</a></div>
       </footer>
     </main>
   );
