@@ -21,3 +21,13 @@ npm run dev
 ```bash
 npm run build
 ```
+
+## EdgeOne 静态镜像
+
+用于国内 PC、手机和微信内置浏览器访问的无脚本静态镜像：
+
+```bash
+npm run build:edgeone
+```
+
+构建产物输出到 `edgeone-dist/`。EdgeOne Pages 使用该命令构建，并将输出目录设置为 `edgeone-dist`。

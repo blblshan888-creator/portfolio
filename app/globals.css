@@ -1406,6 +1406,22 @@ h1 {
   background: #05070c;
 }
 
+.case-video-quality-note {
+  margin: 0;
+  padding: 13px 18px 14px;
+  border-top: 2px solid var(--ink);
+  color: var(--ink);
+  background: var(--yellow);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.case-video-quality-note a {
+  border-bottom: 2px solid currentcolor;
+  font-weight: 950;
+}
+
 .case-video-label {
   position: absolute;
   top: 18px;
@@ -1858,6 +1874,10 @@ h1 {
   .case-video-player video {
     height: auto;
     aspect-ratio: 16 / 9;
+  }
+
+  .case-video-quality-note {
+    padding: 12px 15px 13px;
   }
 
   .evaluation-summary-heading .section-kicker {

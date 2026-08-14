@@ -35,6 +35,11 @@ export default function AIVideoEvaluationPage() {
               <track kind="captions" src="/videos/dragon-conquest-captions.vtt" srcLang="zh" label="中文说明" default />
               当前浏览器不支持视频播放。
             </video>
+            <p className="case-video-quality-note">
+              视频画质有压缩，高清版请前往
+              <a href="https://my.feishu.cn/wiki/WoAmwxwXpiXvmIk74rwceYNVncg?from=from_copylink" target="_blank" rel="noreferrer">文档</a>
+              查看。
+            </p>
           </div>
         </div>
       </section>
